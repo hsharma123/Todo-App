@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+}
+
+body {
+    background-color: #212121;
+
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0px 30px rgba(0, 0, 0, 0.1);
+    background: honeydew;
+}
+
+.todo input[type="text"] {
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.todo input[type="text"]:focus-visible {
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+   justify-content: space-between;
+    gap: 10px;
+    column-gap: 10px;
+    align-items: center;
+    margin: 10px 0;
+    padding: 8px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+ul li button:not(:last-child){
+   padding: 5px 10px;
+   background-color: #5b49c5;
+}
+ul li button:last-child{
+    padding: 5px 10px;
+    background-color: brown;
+}
+.action-button{
+ display: flex;
+ gap: 8px;
+}
+.action-button button{
+    margin-top: 0;
+}
+ul li{
+    margin-top: 20px;
+}
